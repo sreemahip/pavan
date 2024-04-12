@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .timeline {
+    width: 80%;
+    margin: 50px auto;
+  }
+  
+  .timeline-event {
+    border-left: 2px solid #333;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .year {
+    font-weight: bold;
+  }
+  
+  .event {
+    display: block;
+    color: #333;
+  }
+  
+  .event-page {
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  .event-page h2 {
+    color: #333;
+  }
+  
+  .event-page p {
+    color: #666;
+    line-height: 1.5;
+  }
+  

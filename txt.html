@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indian Cricket Team Timeline</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="timeline">
+    <div class="timeline-event" onclick="showEvent('1983')">
+      <span class="year">1983</span>
+      <span class="event">India wins Cricket World Cup</span>
+    </div>
+    <div class="timeline-event" onclick="showEvent('2007')">
+      <span class="year">2007</span>
+      <span class="event">India wins ICC World Twenty20</span>
+    </div>
+    <!-- Add more events here -->
+  </div>
+
+  <div class="event-page" id="event-page">
+    <!-- Event details will be displayed here -->
+  </div>
+
+  <script>
+    function showEvent(year) {
+      // You can add more events and their details here
+      if (year === '1983') {
+        document.getElementById('event-page').innerHTML = `
+          <h2>1983 - India wins Cricket World Cup</h2>
+          <p>India won its first Cricket World Cup under the captaincy of Kapil Dev.</p>
+          <p><a href="#">Read more...</a></p>
+        `;
+      } else if (year === '2007') {
+        document.getElementById('event-page').innerHTML = `
+          <h2>2007 - India wins ICC World Twenty20</h2>
+          <p>India won the inaugural ICC World Twenty20 tournament under the captaincy of MS Dhoni.</p>
+          <p><a href="#">Read more...</a></p>
+        `;
+      }
+      // Add more events and their details similarly
+    }
+  </script>
+</body>
+</html>
